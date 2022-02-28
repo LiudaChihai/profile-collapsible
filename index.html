@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> CSS | Profile - Collapsible</title>
+    <style>
+        body {
+            background-color:  #476b6b;
+        }
+        .profile {
+            background-color: #669999;
+            text-align: center;
+            padding: 20px;
+            margin:2% auto;
+            font-family: Arial;
+
+            width: 90%;
+            max-width: 480px;
+            /* HW1: choose a min-width*/
+            min-width: 400px ;
+
+        }
+        .profile img {
+            width: 200px
+        }
+        .profile ol {
+            text-align: left;
+            color:  #0a0f0f;
+        }
+        .tr-center {
+            text-align: center;
+        }
+        .profile>ol {
+            list-style: none;
+        }
+        .profile a {
+            color: #0a0f0f;
+            text-decoration: none;
+        }
+        #bibliografie {
+            display: none;
+        }
+        #bibliografie:target {
+            display: block;
+        }
+        #interese {
+            display: none;
+        }
+        #interese:target {
+              display: block;
+        }
+        #experienta {
+            display: none;
+        }
+        #experienta:target {
+            display: block;
+        }
+        #abilitati {
+            display: none;
+        }
+        #abilitati:target {
+            display: block;
+        }
+        #info {
+            display: none;
+        }
+         #info:target {
+            display: block;
+        }
+        label {
+            display: block;
+            padding: 5px;
+        }
+        input {
+            padding: 5px;
+            border: 2px solid #000000;
+        }
+        button {
+            padding: 5px 15px;
+            background-color:#476b6b;
+            border: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+
+
+    <div class="profile">
+        <img src="images/avatar.png" alt=" Ana Bujor avatar">
+        <h2> Ana Bujor </h2>
+        <ol>
+            <li>
+                <h3><a href="#bibliografie">Bibliografie</a></h3>
+                <p id="bibliografie"><strong>Ana Bujor</strong> s-a nascut la 10 martie 1984, in orasul Chisinau, Republica Moldova. <br>  Ana Bujor a studiat la L.T. "Liviu Deleanu" din Chisinau. In 2005 a absolvit Universitatea de Stat din Moldova, Facultatea de Litere. Din 2006 pina in 2009 a  activat in calitate de profesoara de limba engleza in Chisinau. Din 2010 pina in 2015 a locuit in SUA. In 2016, Ana Bujor isi deschide scoala de limbi straine in Republica Moldova, unde actviaza in calitate de profesor de limba engleza. </p>
+            </li>
+            <li>
+                <h3><a href="#interese">Interese</a></h3>
+                <ol id="interese">
+                    <li>Studierea mai multor limbi straine</li>
+                    <li>Dansuri latine</li>
+                    <li>Inotul</li>
+                </ol>
+            </li>
+            <li>
+                <h3><a href="#experienta">Experienţă</a></h3>
+                
+                <table border="1" id="experienta">
+
+                    <tr class="tr-center">
+                        <td>Anul</td>
+                        <td>Compania</td>
+                        <td>Functia</td>
+                    </tr>
+                   
+                    <tr>
+                        <td>2006-2009</td>
+                        <td>Scoala Internationala Heritage</td>
+                        <td>Profesoara de limba engleza</td>
+                    </tr>
+                    <tr>
+                        <td>2016-prezent</td>
+                        <td>English School</td>
+                        <td>Administrator, Profesoara de limba engleza</td>
+                    </tr>
+
+                </table>
+            </li>
+            <li>
+                <h3><a href="#abilitati">Abilități</a></h3>
+                <ol id="abilitati">
+                    <li>Lucru in echipa</li>
+                    <li>Creativitate</li>
+                    <li>Empatie</li>
+                    <li>Echitabil</li>
+                    <li>Constructivitate <a href=""></a></li>
+                </ol>
+            </li>
+            <li>
+                <h3><a href="#info">Informații de contact</a></h3>
+                <form action="mailto:ana.bujor@gmail.com" enctype="text/plain" id="info">
+                <p>Invata engleza !!!  </p>
+                <label>
+                    <input type="text" placeholder="Nume">
+                </label>
+                <label>
+                    <input type="text" placeholder="Telefon">
+                </label> 
+                <label>
+                    <input type="text" placeholder="E-mail"> 
+                </label>
+                <br>
+
+                <button>Trimite</button>
+               
+                </form>
+            </li>
+        </ol>
+    </div>
+    
+</body>
+</html>
